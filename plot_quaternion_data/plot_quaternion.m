@@ -25,4 +25,5 @@ plot(odf,'phi2',[0 45 65]* degree,'contour','antipodal');
 
 % Save the generated plot as an image file named 'odf.png'
 saveas(gcf,'odf.png'); 
-
+% Plot (111) pole figure
+plotPDF(odf,[Miller(1,1,1,CS)],'contour','antipodal','complete','upper');
