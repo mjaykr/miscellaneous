@@ -27,3 +27,4 @@ plot(odf,'phi2',[0 45 65]* degree,'contour','antipodal');
 saveas(gcf,'odf.png'); 
 % Plot (111) pole figure
 plotPDF(odf,[Miller(1,1,1,CS)],'contour','antipodal','complete','upper');
+saveas(gcf,'111_pf.png');
