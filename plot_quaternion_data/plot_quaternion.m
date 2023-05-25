@@ -28,3 +28,6 @@ saveas(gcf,'odf.png');
 % Plot (111) pole figure
 plotPDF(odf,[Miller(1,1,1,CS)],'contour','antipodal','complete','upper');
 saveas(gcf,'111_pf.png');
+%Plot IPF (Choose whichever IPF direction you want by changing the xvector
+%e.g. 'yvector', 'zvector'
+plotIPDF(odf,[xvector],'contour','antipodal');
